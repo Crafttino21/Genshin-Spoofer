@@ -52,8 +52,8 @@ MD5 of exe: Follow
 Not Supported in this Moment! 
    
 ### Windows
-Download the official version [here](https://github.com/Crafttino21/Universal-Downloader/releases)  
-Or download and extract the `.zip` of main brach [here](https://github.com/Crafttino21/Universal-Downloader/archive/refs/heads/main.zip)  
+Download the official version [here](https://github.com/Crafttino21/Genshin-Spoofer/releases)
+Or download and extract the `.zip` of main brach [here](https://github.com/Crafttino21/Genshin-Spoofer/archive/refs/heads/main.zip)  
      
 **Once Installed**  
 Open a console in the directory and type `pip install -r requirements.txt`  
