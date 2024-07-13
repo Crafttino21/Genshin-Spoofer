@@ -15,6 +15,10 @@ MD5 of exe: 59684176bc6f0c640eccb9b386dce185
 - this Tool DOSNT change your game files or download older builds!
   It just change your version build number!
 
+**If the Spoofer crashes in Spoofing Progress**
+* Start Spoofer with as Admin!
+
+
 **Version 1.0**
 * Bypassed "game_version" check
 * Fixed Game_Signature check
