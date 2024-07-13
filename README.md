@@ -4,7 +4,7 @@ to run an older Game Version on offical Servers
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X7MF230)
 
-MD5 of exe: Follow
+MD5 of exe: 59684176bc6f0c640eccb9b386dce185
 
 # Status: USE AT YOUR OWN RISK!
 (You can be banned, so dont try it on your main account!)
