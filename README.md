@@ -4,7 +4,8 @@ to run an older Game Version on offical Servers
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X7MF230)
 
-MD5 of exe: 59684176bc6f0c640eccb9b386dce185
+MD5 of exe (Version 1.0): 59684176bc6f0c640eccb9b386dce185
+MD5 of exe (Version 1.1): d57aef39fe83f1e47a8b35e7e9607cc6
 
 # Status: USE AT YOUR OWN RISK!
 (You can be banned, so dont try it on your main account!)
@@ -17,6 +18,10 @@ MD5 of exe: 59684176bc6f0c640eccb9b386dce185
 
 **If the Spoofer crashes in Spoofing Progress**
 * Start Spoofer with as Admin!
+
+**Version 1.0**
+* Added Update Supressor
+* Fixed Permission deniald crash
 
 
 **Version 1.0**
@@ -54,6 +59,10 @@ MD5 of exe: 59684176bc6f0c640eccb9b386dce185
 **Prerequisites**  
 * [Python](https://www.python.org/downloads) 3.9/3.10/3.11
 * Windows 10+
+
+## How to Compile by you own
+* Install python and pyinstaller
+* run "compiler.bat"
  
 ### Linux:
 Not Supported in this Moment! 
