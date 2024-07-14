@@ -20,7 +20,7 @@ MD5 of exe (Version 1.1): d57aef39fe83f1e47a8b35e7e9607cc6
 **If the Spoofer crashes in Spoofing Progress**
 * Start Spoofer with as Admin!
 
-**Version 1.0**
+**Version 1.1**
 * Added Update Supressor
 * Fixed Permission deniald crash
 
