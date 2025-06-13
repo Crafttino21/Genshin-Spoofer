@@ -1,6 +1,6 @@
 import os
 import time
-
+from loguru import logger
 from colorama import Fore, init
 import ctypes
 import configparser
@@ -48,8 +48,8 @@ succ = '''
 
 menu = '''
 Choose your version you want to spoof!
-[1] Newest (4.7.0)
-[2] Fake Dev Build (5.0.0)
+[1] Newest (5.6.0)
+[2] Fake Dev Build (7.0.0)
 [3] Version 4.6.0
 [4] Version 4.5.0
 [5] Custom Version
@@ -83,7 +83,7 @@ class modules:
     def update_game_version(file_path, new_version):
         config = configparser.ConfigParser()
         if not os.path.exists(file_path):
-            print(colors.red + f"File {file_path} not found.")
+            logger.critical(f"File {file_path} not found!")
             return
 
         config.read(file_path)
@@ -93,17 +93,17 @@ class modules:
 
             with open(file_path, 'w') as configfile:
                 config.write(configfile)
-            print(colors.magenta + "Patching Game...")
+            logger.info("Patching game...")
             time.sleep(3)
-            print(colors.green + f"game_version successfully changed to {new_version}.")
+            logger.info(f"Game Version Spoofed Succsessfully to {new_version}.")
         else:
-            print(colors.red + "Section 'General' or key 'game_version' not found.")
+            logger.error("Section 'General' or key 'game_version' not found. Try to Update offsets")
 
     @staticmethod
     def supress_update_patch(file_path):
         config = configparser.ConfigParser()
         if not os.path.exists(file_path):
-            print(colors.red + f"File {file_path} not found!")
+            logger.error(f"File {file_path} not found!")
             return
 
         config.read(file_path)
@@ -113,13 +113,11 @@ class modules:
 
             with open(file_path, 'w') as configfile:
                 config.write(configfile)
-            print(colors.magenta + "Patching Game...")
+            logger.info("Patching Game...")
             time.sleep(3)
-            print(colors.green + "Update Supress Fix Patched!")
+            logger.info("Update Supression succsessflly Patched!")
         else:
-            print(colors.red + "Section 'General' or key 'channel' not found.")
-
-
+            logger.critical("Section 'General' or 'channel' not found. Try to update your offsets!")
 
 
 class version_build:
@@ -156,7 +154,7 @@ class warning:
         if xsf == "I AGREE":
             return True
         else:
-            print(colors.red + "You didn't accept the Terms of Service!")
+            logger.critical("ERROR You didn't accept the Terms of Service!")
             syscalls.Mbox('Genshin Spoofer by WeepingAngel', 'You Dont accept the Terms of Service!', 16)
             exit()
 
@@ -170,8 +168,8 @@ syscalls.Mbox('Genshin Spoofer by WeepingAngel', 'Thanks for Accepting the Terms
 print(colors.magenta + menu)
 
 version_mapping = {
-    "1": "4.7.0",
-    "2": "5.0.0",
+    "1": "5.6.0",
+    "2": "7.0.0",
     "3": "4.6.0",
     "4": "4.5.0",
 }
@@ -190,4 +188,4 @@ elif ver == "6":
     syscalls.changeTitle("Disable Updates Genshin Spoofer by WeepingAngel")
     version_build.supress_update()
 else:
-    print(colors.red + "Invalid selection. Please try again.")
+    logger.error("Invalid selection. Please try again.")
